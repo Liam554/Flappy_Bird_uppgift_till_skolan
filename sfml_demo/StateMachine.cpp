@@ -15,6 +15,7 @@ namespace Liam
 		this->_isRemoving = true;
 	}
 
+	//Process the states
 	void StateMachine::ProcessStateChanges()
 	{
 		if (this->_isRemoving && !this->_states.empty())

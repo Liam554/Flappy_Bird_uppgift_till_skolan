@@ -15,6 +15,7 @@ namespace Liam
 		StateMachine() { }
 		~StateMachine() { }
 
+		//All code basicly just makes the states work
 		void AddState(StateRef newState, bool isReplacing = true);
 		void RemoveState();
 

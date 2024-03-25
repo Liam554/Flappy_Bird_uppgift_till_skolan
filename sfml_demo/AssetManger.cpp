@@ -12,11 +12,13 @@ namespace Liam
 		}
 	}
 
+	//returns textures
 	sf::Texture& AssetManger::GetTexture(std::string name)
 	{
 		return this->_textures.at(name);
 	}
 
+	//Loads and returns fonts
 	void AssetManger::LoadFont(std::string name, std::string fileName)
 	{
 		sf::Font font;
