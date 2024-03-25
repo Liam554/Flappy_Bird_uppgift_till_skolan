@@ -1,3 +1,4 @@
+//pragma alla hpp filerna annars funkar inte coden :(
 #pragma once
 
 #include <map>

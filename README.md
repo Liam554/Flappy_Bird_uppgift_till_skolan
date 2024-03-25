@@ -1,4 +1,4 @@
-Detta är mitt flappy bird sfml projekt 
+Detta är mitt flappy bird sfml projekt för programering 1 uppgiften
 ------
 Info om Headersana.
 Alla headers som jag har är bara class namnen som används i cpp filerna.
