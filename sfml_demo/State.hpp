@@ -15,4 +15,3 @@ namespace Liam
 		virtual void Resume( ) { }
 	};
 }
-//All code is for the game engine so i can change "states" like pause and resume.

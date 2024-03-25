@@ -8,14 +8,14 @@
 namespace Liam
 {
 	typedef std::unique_ptr<State> StateRef;
-
+		
 	class StateMachine
 	{
 	public:
 		StateMachine() { }
 		~StateMachine() { }
 
-		//All code basicly just makes the states work
+		
 		void AddState(StateRef newState, bool isReplacing = true);
 		void RemoveState();
 
