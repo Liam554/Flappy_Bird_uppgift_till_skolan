@@ -2,7 +2,6 @@
 #include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
 #include "GameState.hpp"
-
 #include <iostream>
 
 namespace Liam

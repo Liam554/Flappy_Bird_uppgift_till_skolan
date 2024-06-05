@@ -1,7 +1,6 @@
 #include <sstream>
 #include "GameOverState.hpp"
 #include "DEFINITIONS.hpp"
-
 #include <iostream>
 
 namespace Liam

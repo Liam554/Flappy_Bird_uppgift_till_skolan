@@ -2,7 +2,6 @@
 #include "SplashState.hpp"
 #include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
-
 #include <iostream>
 
 namespace Liam
