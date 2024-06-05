@@ -13,24 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Resource Files\textures">
-      <UniqueIdentifier>{4aceea2a-3051-4495-b068-931dcdf22973}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\sounds">
-      <UniqueIdentifier>{b179d6b0-984e-4d53-8dcb-6f2ac8fce56f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\fonts">
-      <UniqueIdentifier>{bc1f6f4a-43ed-4ed0-8e80-7c1396cd143d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\textures\background">
-      <UniqueIdentifier>{0b3d92fc-3a16-4c0b-9465-77588b8d9abe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\textures\bird">
-      <UniqueIdentifier>{74ef62ee-0125-461a-8537-113f657c1aa4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\textures\get_ready">
-      <UniqueIdentifier>{1c39dd48-2beb-4836-9477-9f2f960792f8}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -49,6 +31,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SplashState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,86 +65,14 @@
     <ClInclude Include="SplashState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="res\fonts\04B_19__.TTF">
-      <Filter>Resource Files\fonts</Filter>
-    </Font>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="res\sounds\sfx_die.wav">
-      <Filter>Resource Files\sounds</Filter>
-    </Media>
-    <Media Include="res\sounds\sfx_hit.wav">
-      <Filter>Resource Files\sounds</Filter>
-    </Media>
-    <Media Include="res\sounds\sfx_point.wav">
-      <Filter>Resource Files\sounds</Filter>
-    </Media>
-    <Media Include="res\sounds\sfx_wing.wav">
-      <Filter>Resource Files\sounds</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="res\textures\gameover.png">
-      <Filter>Resource Files\textures</Filter>
-    </Image>
-    <Image Include="res\textures\ground.png">
-      <Filter>Resource Files\textures</Filter>
-    </Image>
-    <Image Include="res\textures\logo.png">
-      <Filter>Resource Files\textures</Filter>
-    </Image>
-    <Image Include="res\textures\pipe.png">
-      <Filter>Resource Files\textures</Filter>
-    </Image>
-    <Image Include="res\textures\start.png">
-      <Filter>Resource Files\textures</Filter>
-    </Image>
-    <Image Include="res\textures\background\day.png">
-      <Filter>Resource Files\textures\background</Filter>
-    </Image>
-    <Image Include="res\textures\background\impossible.png">
-      <Filter>Resource Files\textures\background</Filter>
-    </Image>
-    <Image Include="res\textures\background\night.png">
-      <Filter>Resource Files\textures\background</Filter>
-    </Image>
-    <Image Include="res\textures\bird\1-1.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\1-2.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\1-3.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\2-1.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\2-2.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\2-3.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\2-4.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\3-1.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\3-2.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\bird\3-3.png">
-      <Filter>Resource Files\textures\bird</Filter>
-    </Image>
-    <Image Include="res\textures\get_ready\1.png">
-      <Filter>Resource Files\textures\get_ready</Filter>
-    </Image>
-    <Image Include="res\textures\get_ready\2.png">
-      <Filter>Resource Files\textures\get_ready</Filter>
-    </Image>
+    <ClInclude Include="MainMenuState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverState.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,7 +1,6 @@
-#pragma once
-
 #include <sstream>
 #include "SplashState.hpp"
+#include "MainMenuState.hpp"
 #include "DEFINITIONS.hpp"
 
 #include <iostream>
@@ -37,7 +36,7 @@ namespace Liam
 	{
 		if (_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME)
 		{
-			std::cout << "Go To Main Menu" << std::endl;
+			_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
 		}
 	}
 

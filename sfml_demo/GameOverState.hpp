@@ -6,10 +6,10 @@
 
 namespace Liam
 {
-	class SplashState : public State
+	class GameOverState : public State
 	{
 	public:
-		SplashState(GameDataRef data);
+		GameOverState(GameDataRef data);
 
 		void Init();
 
@@ -19,8 +19,6 @@ namespace Liam
 
 	private:
 		GameDataRef _data;
-
-		sf::Clock _clock;
 
 		sf::Sprite _background;
 	};
