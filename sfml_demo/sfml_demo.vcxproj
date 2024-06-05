@@ -135,14 +135,48 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputManger.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManger.hpp" />
+    <ClInclude Include="DEFINITIONS.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="InputManger.hpp" />
+    <ClInclude Include="SplashState.hpp" />
     <ClInclude Include="State.hpp" />
     <ClInclude Include="StateMachine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\04B_19__.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\sounds\sfx_die.wav" />
+    <Media Include="res\sounds\sfx_hit.wav" />
+    <Media Include="res\sounds\sfx_point.wav" />
+    <Media Include="res\sounds\sfx_wing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\textures\background\day.png" />
+    <Image Include="res\textures\background\impossible.png" />
+    <Image Include="res\textures\background\night.png" />
+    <Image Include="res\textures\bird\1-1.png" />
+    <Image Include="res\textures\bird\1-2.png" />
+    <Image Include="res\textures\bird\1-3.png" />
+    <Image Include="res\textures\bird\2-1.png" />
+    <Image Include="res\textures\bird\2-2.png" />
+    <Image Include="res\textures\bird\2-3.png" />
+    <Image Include="res\textures\bird\2-4.png" />
+    <Image Include="res\textures\bird\3-1.png" />
+    <Image Include="res\textures\bird\3-2.png" />
+    <Image Include="res\textures\bird\3-3.png" />
+    <Image Include="res\textures\gameover.png" />
+    <Image Include="res\textures\get_ready\1.png" />
+    <Image Include="res\textures\get_ready\2.png" />
+    <Image Include="res\textures\ground.png" />
+    <Image Include="res\textures\logo.png" />
+    <Image Include="res\textures\pipe.png" />
+    <Image Include="res\textures\start.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
