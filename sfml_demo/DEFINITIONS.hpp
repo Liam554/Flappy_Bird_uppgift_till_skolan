@@ -16,5 +16,45 @@
 
 #define PIPE_UP_FILEPATH "Resources/res/PipeUp.png"
 #define PIPE_DOWN_FILEPATH "Resources/res/PipeDown.png"
+#define SCORING_PIPE_FILEPATH "Resources/res/InvisibleScoringPipe.png"
+
 
 #define PIPE_MOVEMENT_SPEED 200.0f
+#define PIPE_SPAWN_FREQUENCY 2.5f 
+
+#define LAND_FILEPATH "Resources/res/Land.png"
+
+#define BIRD_FRAME_1_FILEPATH "Resources/res/bird-01.png"
+#define BIRD_FRAME_2_FILEPATH "Resources/res/bird-02.png"
+#define BIRD_FRAME_3_FILEPATH "Resources/res/bird-03.png"
+#define BIRD_FRAME_4_FILEPATH "Resources/res/bird-04.png"
+
+#define BIRD_ANIMATION_DURATION 0.4f
+
+#define BIRD_STATE_STILL 1
+#define BIRD_STATE_FALLING 2
+#define BIRD_STATE_FLYING 3
+
+#define GRAVITY 350.0f
+#define FLYING_SPEED 350.f
+
+#define FLYING_DURATION 0.25f
+
+#define ROTATION_SPEED 100.0f
+
+enum GameStates
+{
+	eReady, 
+	ePlaying,
+	eGameOver
+};
+
+#define FLASH_SPEED 1500.0f
+
+#define FLAPPY_FONT_FILEPATH "Resources/fonts/FlappyFont.ttf"
+
+#define GAME_OVER_TITLE_FILEPATH "Resources/res/Game-Over-Title.png"
+
+#define GAME_OVER_BODY_FILEPATH "Resources/res/Game-Over-Body.png"
+
+#define TIME_BEFORE_GAME_OVER_APPEARS 1.5f

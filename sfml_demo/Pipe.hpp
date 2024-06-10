@@ -16,11 +16,20 @@ namespace Liam
 		void SpawnInvisiblePipe();
 		void MovePipes(float dt);
 
-
 		void DrawPipes();
+		void RandomisePipeOffset();
+
+		const std::vector<sf::Sprite>& GetSprites() const;
+		std::vector<sf::Sprite>& GetScoringSprites();
+
 
 	private:
 		GameDataRef _data;
 		std::vector<sf::Sprite> pipeStripes;
+		std::vector<sf::Sprite> scoringPipes;
+
+
+		int _landHeight;
+		int _pipeSpawnYOffset;
 	};
 }

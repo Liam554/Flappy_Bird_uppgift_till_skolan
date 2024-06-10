@@ -132,10 +132,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssetManger.cpp" />
+    <ClCompile Include="Bird.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Flash.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameOverState.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="InputManger.cpp" />
+    <ClCompile Include="Land.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="Pipe.cpp" />
@@ -144,11 +148,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManger.hpp" />
+    <ClInclude Include="Bird.hpp" />
+    <ClInclude Include="Collision.hpp" />
     <ClInclude Include="DEFINITIONS.hpp" />
+    <ClInclude Include="Flash.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="GameOverState.hpp" />
     <ClInclude Include="GameState.hpp" />
     <ClInclude Include="InputManger.hpp" />
+    <ClInclude Include="Land.hpp" />
     <ClInclude Include="MainMenuState.hpp" />
     <ClInclude Include="Pipe.hpp" />
     <ClInclude Include="SplashState.hpp" />
