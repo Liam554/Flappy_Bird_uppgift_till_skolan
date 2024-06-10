@@ -108,21 +108,6 @@ namespace Liam
 				}
 			}
 
-			if (GameStates::ePlaying == _gameState)
-			{
-				std::vector<sf::Sprite>& scoringSprites = pipe->GetScoringSprites();
-
-				for (int i = 0; i < scoringSprites.size(); i++)
-				{
-					if (collition.CheckSpriteCollision(bird->GetSprite(), 0.625f, scoringSprites.at(i), 1.0f))
-					{
-						_score++;
-
-
-						scoringSprites.erase(scoringSprites.begin() + i);
-					}
-				}
-			}
 		}
 
 		if (GameStates::eGameOver == _gameState)
