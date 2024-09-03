@@ -1,5 +1,6 @@
 #include "Collision.hpp"
 
+//tittar ifall två olika sprites kolliderar
 namespace Liam
 {
 	Collision::Collision()
