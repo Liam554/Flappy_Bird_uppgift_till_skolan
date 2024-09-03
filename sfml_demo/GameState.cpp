@@ -68,7 +68,7 @@ namespace Liam
 			bird->Animate(dt);
 
 		}
-
+	        // If the game is in progress, update pipes, check for collisions, and handle game-over state
 		if (GameStates::ePlaying == _gameState)
 		{
 			pipe->MovePipes(dt);
