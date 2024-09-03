@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+//logiken bakom pipporna i spelet som används som hinder
 namespace Liam
 {
 	Pipe::Pipe(GameDataRef data) : _data(data)
