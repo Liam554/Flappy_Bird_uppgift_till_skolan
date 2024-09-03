@@ -11,7 +11,7 @@ namespace Liam
 	{
 
 	}
-
+//Init function to initialize game resources and state
 	void GameState::Init()
 	{
 		_data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
