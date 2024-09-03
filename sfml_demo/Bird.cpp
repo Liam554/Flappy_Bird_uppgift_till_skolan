@@ -1,5 +1,6 @@
 #include "Bird.hpp"
 
+//Alla olika sprites som fågeln använder för att göra animationer.
 namespace Liam
 {
 	Bird::Bird(GameDataRef data) : _data(data)
