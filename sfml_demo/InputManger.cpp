@@ -6,9 +6,10 @@ namespace Liam
 	{
 		if (sf::Mouse::isButtonPressed(button))
 		{
-			//can detect colision
+			// Create a rectangle from the sprite's position and size
 			sf::IntRect tempRect(object.getPosition().x, object.getPosition().y, object.getGlobalBounds().width, object.getGlobalBounds().height);
 
+			// Check if the mouse position is within the rectangle
 			if (tempRect.contains(sf::Mouse::getPosition(window)))
 			{
 				return true;
