@@ -2,6 +2,7 @@
 
 namespace Liam
 {
+    	// Function to load a texture from a file and store it in the _textures map with a given name
 	void AssetManger::LoadTexture(std::string name, std::string fileName)
 	{
 		sf::Texture tex;
@@ -11,14 +12,12 @@ namespace Liam
 			this->_textures[name] = tex;
 		}
 	}
-
-	//returns textures
+	// Function to retrieve a reference to a texture from the _textures map using its name
 	sf::Texture& AssetManger::GetTexture(std::string name)
 	{
 		return this->_textures.at(name);
 	}
-
-	//Loads and returns fonts
+    	// Function to load a font from a file and store it in the _fonts map with a given name
 	void AssetManger::LoadFont(std::string name, std::string fileName)
 	{
 		sf::Font font;
@@ -28,7 +27,7 @@ namespace Liam
 			this->_fonts[name] = font;
 		}
 	}
-
+    	// Function to retrieve a reference to a font from the _fonts map using its name
 	sf::Font &AssetManger::GetFont(std::string name)
 	{
 		return this->GetFont(name);
