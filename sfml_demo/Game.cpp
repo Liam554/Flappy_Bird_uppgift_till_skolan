@@ -5,6 +5,7 @@
 
 namespace Liam
 {
+	// Constructor for the Game class, initializing the game window and setting the initial state
 	Game::Game(int width, int height, std::string title)
 	{
 		srand(time(NULL));
@@ -13,6 +14,7 @@ namespace Liam
 
 		this->Run();
 	}
+	// Main game loop that handles state changes, updates, and rendering
 	void Game::Run()
 	{
 		float newTime, frameTime, interpolation;
