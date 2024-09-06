@@ -1,8 +1,9 @@
 #include "Bird.hpp"
 
-//Alla olika sprites som fågeln använder för att göra animationer.
+
 namespace Liam
 {
+	// Constructor for the Bird class, initializes bird's texture, position, and state
 	Bird::Bird(GameDataRef data) : _data(data)
 	{
 		_animationIterator = 0;
@@ -24,11 +25,12 @@ namespace Liam
 		_rotation = 0;
 	}
 
+	// Draw the bird sprite on the game window
 	void Bird::Draw()
 	{
 		_data->window.draw(_birdSprite);
 	}
-
+	// Animate the bird by cycling through the animation frames based on time
 	void Bird::Animate(float dt)
 	{
 		if (_clock.getElapsedTime().asSeconds() > BIRD_ANIMATION_DURATION / _animationFrames.size())
@@ -47,7 +49,7 @@ namespace Liam
 			_clock.restart();
 		}
 	}
-
+	// Update the bird's position and rotation based on its state (falling or flying)
 	void Bird::Update(float dt)
 	{
 		if (BIRD_STATE_FALLING == _birdState)
@@ -69,27 +71,27 @@ namespace Liam
 
 			_rotation -= ROTATION_SPEED * dt;
 
-			if (_rotation < -25.0f)
+			if (_rotation < -25.0f)  // Limit the bird's rotation to a minimum angle of -25 degrees
 			{
 				_rotation = 25.0f;
 			}
 
 			_birdSprite.setRotation(_rotation);
 		}
-
+		// If the bird has been flying for longer than the allowed flying duration, switch to falling state
 		if (_movementClock.getElapsedTime().asSeconds() > FLYING_DURATION)
 		{
 			_movementClock.restart();
 			_birdState = BIRD_STATE_FALLING;
 		}
 	}
-
+	// Handle the player's input to make the bird fly
 	void Bird::Tap()
 	{
 		_movementClock.restart();
 		_birdState = BIRD_STATE_FLYING;
 	}
-
+	// Return a constant reference to the bird's sprite (used for collision detection, etc.)
 	const sf::Sprite& Bird::GetSprite() const
 	{
 		return _birdSprite;
