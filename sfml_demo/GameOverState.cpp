@@ -6,11 +6,13 @@
 
 namespace Liam
 {
+	    // Constructor for GameOverState, initializing the game data reference
 	GameOverState::GameOverState(GameDataRef data) : _data(data)
 	{
 
 	}
 
+    // Initialize the game over state by loading textures and setting up UI elements
 	void GameOverState::Init()
 	{
 		_data->assets.LoadTexture("Game Over Background", GAME_OVER_BACKGROUND_FILEPATH);
@@ -29,6 +31,7 @@ namespace Liam
 
 	}
 
+    // Handle player inputs, such as retry button click or window close event
 	void GameOverState::HandleInput()
 	{
 		sf::Event event;
@@ -46,12 +49,12 @@ namespace Liam
 			}
 		}
 	}
-
+	    // Update function, left empty as there is no logic to update in the game over state
 	void GameOverState::Update(float dt)
 	{
 
 	}
-
+    // Draw the game over screen elements (background, container, retry button) on the window
 	void GameOverState::Draw(float dt)
 	{
 		_data->window.clear();
