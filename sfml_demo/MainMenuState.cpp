@@ -10,7 +10,7 @@ namespace Liam
 	{
 
 	}
-
+    	// Initializes the main menu by loading assets (textures) and setting up the background, title, and play button
 	void MainMenuState::Init()
 	{
 		_data->assets.LoadTexture("Main Menu Background", MAIN_MENU_BACKGROUND_FILEPATH);
@@ -25,7 +25,7 @@ namespace Liam
 		_playButton.setPosition((SCREEN_WIDTH / 2) - (_playButton.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 2) - (_playButton.getGlobalBounds().height / 2) );
 
 	}
-
+	// Handles user input such as mouse clicks and window close events
 	void MainMenuState::HandleInput()
 	{
 		sf::Event event;
@@ -43,12 +43,12 @@ namespace Liam
 			}
 		}
 	}
-
+	// Update function (currently unused, but could be used for future updates)
 	void MainMenuState::Update(float dt)
 	{
 
 	}
-
+	// Draws the main menu by rendering the background, title, and play button to the screen
 	void MainMenuState::Draw(float dt)
 	{
 		_data->window.clear();
