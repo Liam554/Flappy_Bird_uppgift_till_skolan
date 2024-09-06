@@ -3,6 +3,7 @@
 
 namespace Liam
 {
+	// This is part of the State design pattern, which allows for different game states (e.g., Main Menu, Game Over, Playing).
 	class State
 	{
 	public:
