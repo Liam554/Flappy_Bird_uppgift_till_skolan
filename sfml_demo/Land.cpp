@@ -3,6 +3,7 @@
 
 namespace Liam
 {
+    	// Constructor for the Land class, initializing the land sprites.
 	Land::Land(GameDataRef data) : _data(data)
 	{
 		sf::Sprite sprite(_data->assets.GetTexture("Land"));
@@ -14,7 +15,7 @@ namespace Liam
 		_landSprites.push_back(sprite);
 		_landSprites.push_back(sprite2);
 	}
-
+    	// Updates the position of the land sprites to create a scrolling effect.
 	void Land::MoveLand(float dt)
 	{
 		for (unsigned short int i = 0; i < _landSprites.size(); i++)
@@ -31,7 +32,7 @@ namespace Liam
 			}
 		}
 	}
-
+	// Draws all land sprites to the window.
 	void Land::DrawLand()
 	{
 		for (unsigned short int i = 0; i < _landSprites.size(); i++)
@@ -39,7 +40,7 @@ namespace Liam
 			_data->window.draw(_landSprites.at(i));
 		}
 	}
-
+	// Returns a constant reference to the vector of land sprites.
 	const std::vector<sf::Sprite>& Land::GetSprites() const
 	{
 		return _landSprites;
